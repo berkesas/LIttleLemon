@@ -9,7 +9,7 @@ class Booking(models.Model):
     booking_date = models.DateTimeField(auto_now=True)
 
 
-class Menu(models.Model):
+class MenuItem(models.Model):
     title = models.CharField(max_length=255, null=False)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     inventory = models.PositiveIntegerField(null=False, blank=False)
